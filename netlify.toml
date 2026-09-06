@@ -1,0 +1,13 @@
+# Netlify configuration for Borrow My Executive Functioning.
+# The site is plain HTML with no build step; everything under site/ is published as-is.
+
+[build]
+  publish = "site"
+
+# Sensible security headers for a static site.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"

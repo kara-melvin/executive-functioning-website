@@ -1,0 +1,21 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Obsidian (this folder lives inside a vault; don't carry vault state along)
+.obsidian/
+.trash/
+
+# Secrets — never commit these
+*.env
+.env.*
+.netlify/
+
+# Dependencies, if the project ever grows a build step
+node_modules/
