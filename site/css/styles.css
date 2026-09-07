@@ -424,6 +424,10 @@ main { flex: 1; }
   object-fit: cover;
   border-bottom: var(--border);
 }
+.card--media img.img-contain {
+  object-fit: contain;
+  background: #5EC5D8; /* matches the ADHD Hacks cover background */
+}
 .card--media .card-body {
   display: flex; flex-direction: column; gap: var(--space-2);
   padding: var(--space-3);
@@ -492,6 +496,20 @@ main { flex: 1; }
 .callout h3, .callout h4 { margin-bottom: 0.35rem; }
 
 /* ---------- Lists ---------- */
+.borrow-list {
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-2) var(--space-3);
+  display: grid;
+  gap: 0.35rem;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.borrow-list li::before {
+  content: "\2192\00a0";
+  color: var(--teal);
+}
 .checklist {
   list-style: none;
   padding: 0;
