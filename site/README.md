@@ -77,7 +77,7 @@ The flow, end to end:
 
 **In MailerLite**
 
-1. The existing mailing-list group (ID `167492975795897791`) is already set as the default in the
+1. The existing mailing-list group (ID `167530272108054445`) is already set as the default in the
    function. New website signups join it. To use a different group later, set `MAILERLITE_GROUP_ID`.
 2. Integrations, then API: **Generate new token**. Copy it once; it is only shown once.
 3. Automations: if the group already has a "When subscriber joins a group" automation, edit its

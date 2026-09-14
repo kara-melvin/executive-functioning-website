@@ -21,7 +21,7 @@
 
 const NEWSLETTER_FORM = "newsletter";
 // The existing "mailing list" group in MailerLite. Not a secret; the API key is.
-const DEFAULT_GROUP_ID = "167492975795897791";
+const DEFAULT_GROUP_ID = "167530272108054445";
 
 exports.handler = async function (event) {
   let payload;
