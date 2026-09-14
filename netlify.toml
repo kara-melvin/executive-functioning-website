@@ -11,3 +11,9 @@
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Serverless functions. netlify/functions/submission-created.js runs after every
+# form submission and adds newsletter signups to MailerLite (see site/README.md).
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

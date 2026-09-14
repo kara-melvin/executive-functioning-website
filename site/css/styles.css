@@ -529,6 +529,36 @@ main { flex: 1; }
 .checklist--two {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
 }
+/* Numbered steps: same shape as .checklist, with the step number inside. */
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+  counter-reset: step;
+}
+.steps-list li {
+  position: relative;
+  padding-left: 2.2rem;
+  counter-increment: step;
+}
+.steps-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0; top: 0.1em;
+  width: 1.5rem; height: 1.5rem;
+  border-radius: 50%;
+  background: var(--lemon);
+  border: var(--border);
+  color: var(--lagoon);
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: grid;
+  place-items: center;
+}
+.card .hint { font-size: 0.95rem; color: var(--teal); margin-bottom: 0; }
 
 /* ---------- FAQ (native <details>) ---------- */
 .faq { display: grid; gap: var(--space-2); }
@@ -692,6 +722,20 @@ main { flex: 1; }
   font-weight: 400;
 }
 .form-card button.btn { cursor: pointer; }
+/* Side-by-side fields (state / ZIP) that stack on small screens. */
+.form-card .field--row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+@media (max-width: 30rem) {
+  .form-card .field--row { grid-template-columns: 1fr; }
+}
+.form-card label .optional {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--teal);
+}
 /* Spam trap: hidden from people, still in the DOM for bots. */
 .honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 

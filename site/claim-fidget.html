@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Newsletter Signup | Borrow My Executive Functioning</title>
-  <meta name="description" content="Join the Borrow My Executive Functioning newsletter and get a free fidget toy.">
+  <title>Claim Your Free Fidget | Borrow My Executive Functioning</title>
+  <meta name="description" content="Tell me where to mail your free fidget toy for joining the newsletter.">
+  <meta name="robots" content="noindex">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +41,9 @@
 
     <section class="hero">
       <div class="container">
-        <p class="kicker">Newsletter</p>
-        <h1>Join the <span class="hl">crew</span></h1>
-        <p class="lead measure">Sign up for my newsletter and get a free fidget toy! Practical strategies, ADHD hacks, and encouragement, straight to your inbox. Never more than a few emails a month, and you can leave any time.</p>
+        <p class="kicker">Welcome to the crew</p>
+        <h1>Claim your <span class="hl">free fidget</span></h1>
+        <p class="lead measure">Thanks for joining the newsletter! Tell me where to send your fidget toy and I'll pop it in the mail. One short form, then you're done.</p>
       </div>
     </section>
 
@@ -50,45 +51,69 @@
       <div class="container">
         <div class="split">
           <div>
-            <h2 id="signup-heading">Sign up</h2>
-            <form class="form-card" name="newsletter" method="POST" action="thanks.html?form=newsletter" data-netlify="true" netlify-honeypot="bot-field" aria-labelledby="signup-heading">
-              <input type="hidden" name="form-name" value="newsletter">
+            <h2 id="claim-heading">Where should it go?</h2>
+            <form class="form-card" name="fidget-claim" method="POST" action="thanks.html?form=fidget" data-netlify="true" netlify-honeypot="bot-field" aria-labelledby="claim-heading">
+              <input type="hidden" name="form-name" value="fidget-claim">
               <p class="honeypot" aria-hidden="true">
                 <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
               </p>
               <div class="field">
-                <label for="nl-name">First name</label>
-                <input id="nl-name" name="name" type="text" autocomplete="given-name" required>
+                <label for="fc-name">Full name</label>
+                <input id="fc-name" name="name" type="text" autocomplete="name" required>
+                <p class="hint">As it should appear on the package.</p>
               </div>
               <div class="field">
-                <label for="nl-email">Email</label>
-                <input id="nl-email" name="email" type="email" autocomplete="email" required>
+                <label for="fc-email">Email</label>
+                <input id="fc-email" name="email" type="email" autocomplete="email" required>
+                <p class="hint">The same one you used to sign up, so I can match it to your subscription.</p>
+              </div>
+              <div class="field">
+                <label for="fc-address1">Street address</label>
+                <input id="fc-address1" name="address1" type="text" autocomplete="address-line1" required>
+              </div>
+              <div class="field">
+                <label for="fc-address2">Apartment, unit, etc. <span class="optional">(optional)</span></label>
+                <input id="fc-address2" name="address2" type="text" autocomplete="address-line2">
+              </div>
+              <div class="field">
+                <label for="fc-city">City</label>
+                <input id="fc-city" name="city" type="text" autocomplete="address-level2" required>
+              </div>
+              <div class="field field--row">
+                <div>
+                  <label for="fc-state">State</label>
+                  <input id="fc-state" name="state" type="text" autocomplete="address-level1" required>
+                </div>
+                <div>
+                  <label for="fc-zip">ZIP code</label>
+                  <input id="fc-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" required>
+                </div>
+              </div>
+              <div class="field">
+                <label for="fc-notes">Anything I should know? <span class="optional">(optional)</span></label>
+                <textarea id="fc-notes" name="notes" rows="3"></textarea>
+                <p class="hint">A favorite color, a texture you love or hate, a fidget you already have. Otherwise I'll surprise you.</p>
               </div>
               <div class="field field--check">
-                <input id="nl-consent" name="consent" type="checkbox" value="yes" required>
-                <label for="nl-consent">Yes, send me the newsletter. I know I can unsubscribe any time.</label>
+                <input id="fc-consent" name="address-consent" type="checkbox" value="yes" required>
+                <label for="fc-consent">I understand my address is used only to mail this fidget toy and is deleted once it ships.</label>
               </div>
-              <button class="btn btn--secondary" type="submit">Sign up</button>
+              <button class="btn btn--secondary" type="submit">Send my fidget</button>
             </form>
           </div>
           <div>
             <div class="card card--lemon">
-              <h3>What you'll get</h3>
+              <h3>Good to know</h3>
               <ul class="checklist">
-                <li>A free fidget toy when you join</li>
-                <li>ADHD hacks and management tips</li>
-                <li>New tools and resources first</li>
-                <li>No spam. Unsubscribe any time.</li>
+                <li>One fidget per person, while supplies last</li>
+                <li>US mailing addresses only for now</li>
+                <li>Allow 2 to 3 weeks for delivery</li>
+                <li>Your address is never shared or kept after shipping</li>
               </ul>
             </div>
             <div class="card card--aqua" style="margin-top: var(--space-3)">
-              <h3>How the fidget works</h3>
-              <ol class="steps-list">
-                <li>Sign up with your name and email.</li>
-                <li>A welcome email lands in your inbox with a "claim my fidget" link.</li>
-                <li>Tell me where to mail it. That's it.</li>
-              </ol>
-              <p class="hint" style="margin-top: 0.75rem">One per person, US addresses only for now, while supplies last. Every email has an unsubscribe link at the bottom, and it works instantly.</p>
+              <h3>Didn't sign up yet?</h3>
+              <p>This page is for newsletter subscribers. <a href="newsletter.html">Join the newsletter first</a> and the welcome email will bring you right back here.</p>
             </div>
           </div>
         </div>

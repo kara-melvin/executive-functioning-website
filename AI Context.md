@@ -89,4 +89,17 @@ The Bottom Bar should have a place for the user to click links to get to differe
 
 The logo from : /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Image_Resources/Home  : logo.png  should be incoporated into the header.
 
+**Important Paths:**
+*The general content for the pages is laid out in the following files. Feel free to layout the content per the guidelines we set.*
 
+Home: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Home.md
+
+About Me: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/About Me.md
+
+Services: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Services.md
+	Appointment Help: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Appointment Help.md
+	 Body Doubling: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Body Doubling.md
+	 Support: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Support.md
+Tools: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Tool.md
+Free Resources: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Free Resources.md
+Disclaimer and Policies: /home/kara/Documents/Obsidian/Projects/Executive-Function-Website/Pages_Content/Disclaimers and Policies.md
